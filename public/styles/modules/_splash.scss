@@ -1,0 +1,42 @@
+#container {
+    margin: 0 auto;
+    padding-top: 400px;
+    background-image: url(/public/images/img_splash.png);
+    background-repeat:no-repeat;
+    height: 800px;
+    width: 100%;
+    #logo {
+        width: 12%;
+        position: relative;
+        display: block;
+    } 
+}
+
+.arrow {
+    text-align: center;
+    margin: 8% 0;
+  }
+
+  .bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+ .arrow img {
+    border: solid white 4px;
+    border-radius: 100%;
+    padding: 20px;
+  }

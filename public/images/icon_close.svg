@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffd25e;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #53225c;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 13px;
+      }
+    </style>
+  </defs>
+  <title>icon_close</title>
+  <g id="icon_close">
+    <circle id="circle" class="cls-1" cx="75" cy="75" r="67.5"/>
+    <g id="x">
+      <line class="cls-2" x1="102.35" y1="101.99" x2="46.91" y2="47.55"/>
+      <line class="cls-2" x1="45.83" y1="102.08" x2="104.58" y2="47.55"/>
+    </g>
+  </g>
+</svg>

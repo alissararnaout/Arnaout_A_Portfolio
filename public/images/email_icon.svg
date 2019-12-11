@@ -1,0 +1,25 @@
+<svg id="email_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f16b8c;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 14px;
+      }
+    </style>
+  </defs>
+  <title>email_icon</title>
+  <circle class="cls-1" cx="250.32" cy="248.69" r="237.44"/>
+  <g id="email_icon-2" data-name="email_icon">
+    <path class="cls-2" d="M130.85,179.32V317a13.64,13.64,0,0,0,13.64,13.64H354.36A13.65,13.65,0,0,0,368,317V179.32a13.65,13.65,0,0,0-13.65-13.65H144.49a13.65,13.65,0,0,0-13.64,13.65Z"/>
+    <path class="cls-2" d="M135.66,170.26,240.17,274.77a13.09,13.09,0,0,0,18.51,0L363.19,170.26"/>
+    <line class="cls-2" x1="147.94" y1="330.35" x2="221.79" y2="256.5"/>
+    <line class="cls-2" x1="277.06" y1="256.5" x2="351.21" y2="330.65"/>
+  </g>
+</svg>

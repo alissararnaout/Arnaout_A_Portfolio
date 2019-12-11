@@ -1,0 +1,64 @@
+@import 'modules/splash';
+@import 'modules/about';
+@import 'modules/work';
+@import 'modules/contact';
+
+
+
+* {
+    margin: 0 auto;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Poiret One', cursive;;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+    letter-spacing: 3px;
+    margin-top: 40px;
+}
+
+h2 {
+    color: #212121;
+    font-size: 40px;
+    margin-top: 50px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+h4 {
+    color: #FF6B8D;
+    font-size: 30px;
+}
+
+p {
+    color: #212121;
+    font-size: 27px;
+    line-height: 45px;
+}
+
+.divider {
+    margin: 0 auto;
+    display: block;
+    margin-top: 15px;
+}
+
+.divider-yllw {
+  margin: 0 auto;
+  display: block;
+  margin-top: 40px;  
+}
