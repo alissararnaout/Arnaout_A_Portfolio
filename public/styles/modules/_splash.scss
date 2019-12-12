@@ -1,16 +1,23 @@
 #container {
     margin: 0 auto;
-    padding-top: 350px;
-    background-image: url(/public/images/img_splash.png);
-    background-repeat:no-repeat;
-    height: 800px;
-    width: 100%;
+    max-width: 100%;
+    background-color: red;
+}
+    #splash {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+    }
+    #content {
+        clear: both;
+        position: relative;
+    }
     #logo {
         width: 12%;
         margin: 0 auto;
         display: block;
     } 
-}
+
 
 .arrow {
     text-align: center;
@@ -38,5 +45,6 @@
  .arrow img {
     border: solid white 4px;
     border-radius: 100%;
-    padding: 20px;
+    padding: 15px;
+    width: 2%;
   }

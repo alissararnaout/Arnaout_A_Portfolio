@@ -1,50 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st2{stroke:#000000;stroke-miterlimit:10;}
-	.st3{fill:#FFFFFF;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
-	.st4{fill:none;stroke:#000000;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st5{fill:#FFFFFF;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
-	.st6{fill:none;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st7{display:none;}
-	.st8{display:inline;stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st9{fill:none;stroke:#FFFFFF;stroke-width:30;stroke-miterlimit:10;}
-	.st10{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
-	.st11{fill:#FFFFFF;}
-	.st12{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-</style>
-<g id="logo_x5F_full">
-	<g id="a-circle_copy">
-	</g>
-	<g id="a-line_copy">
-	</g>
-	<g id="name">
-	</g>
-</g>
-<g id="logo">
-	<g id="a-circle">
-	</g>
-	<g id="a-line">
-	</g>
-</g>
-<g id="logo_x5F_watermark">
-</g>
-<g id="guidelines">
-	<g id="bckgrnd" class="st7">
-		<rect class="st8" width="800" height="800"/>
-	</g>
-	<g id="surroundingcrlce">
-		<circle class="st9" cx="400" cy="400" r="375.6"/>
-	</g>
-	<ellipse id="circle_7_" class="st10" cx="288.2" cy="514.1" rx="115" ry="111.9"/>
-	<path id="circle_6_" class="st11" d="M288.2,514.1l55.6,98c-17,9.2-36.2,14-55.6,14c-63.1,0-115-50.5-115-111.9
-		c0-41,23.1-78.8,60.1-98.4L288.2,514.1z"/>
-	<path id="outer-line_8_" class="st12" d="M355.4,632.5l-121-214.3L355.4,632.5z"/>
-	<polygon id="inner-line_3_" class="st11" points="630.3,630.6 367.6,165.5 288.2,166.6 550.9,631.8 	"/>
-	<path id="outer-line_5_" class="st12" d="M272.7,199.9l17.4-30.7L272.7,199.9z"/>
-</g>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 764.18 764.18">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+        stroke: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        stroke-width: 30px;
+      }
+
+      .cls-2 {
+        stroke-width: 4px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <title>logo_white</title>
+  <g id="guidelines">
+    <g id="surroundingcrlce">
+      <circle class="cls-1" cx="382.09" cy="382.09" r="367.09"/>
+    </g>
+    <ellipse id="circle" class="cls-2" cx="268.54" cy="485.9" rx="115" ry="111.9"/>
+    <path id="circle-2" data-name="circle" class="cls-3" d="M284.4,501.12l55.6,98a117,117,0,0,1-55.6,14c-63.1,0-115-50.5-115-111.9,0-41,23.1-78.8,60.1-98.4Z" transform="translate(-15.86 -17.22)"/>
+    <path id="outer-line" class="cls-4" d="M351.6,619.52l-121-214.3Z" transform="translate(-15.86 -17.22)"/>
+    <polygon id="inner-line" class="cls-3" points="610.64 600.4 347.94 135.3 268.54 136.4 531.24 601.6 610.64 600.4"/>
+    <path id="outer-line-2" data-name="outer-line" class="cls-4" d="M268.9,186.92l17.4-30.7Z" transform="translate(-15.86 -17.22)"/>
+  </g>
 </svg>

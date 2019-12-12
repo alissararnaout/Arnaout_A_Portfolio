@@ -1,13 +1,21 @@
 #container {
   margin: 0 auto;
-  padding-top: 350px;
-  background-image: url(/public/images/img_splash.png);
-  background-repeat: no-repeat;
-  height: 800px;
+  max-width: 100%;
+  background-color: red;
+}
+
+#splash {
+  margin: 0 auto;
+  display: block;
   width: 100%;
 }
 
-#container #logo {
+#content {
+  clear: both;
+  position: relative;
+}
+
+#logo {
   width: 12%;
   margin: 0 auto;
   display: block;
@@ -56,27 +64,29 @@
 .arrow img {
   border: solid white 4px;
   border-radius: 100%;
-  padding: 20px;
+  padding: 15px;
+  width: 2%;
 }
 
 #about {
-  padding-left: 400px;
-  padding-right: 400px;
-  height: 760px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background: #0000ff;
 }
 
 #about-profile {
   float: right;
-  margin-top: 100px;
-  margin-right: 80px;
+  margin-top: 110px;
 }
 
 #about-profile #profile {
-  width: 95%;
+  width: 70%;
 }
 
 #about-desc {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 #work {
@@ -88,19 +98,30 @@
 }
 
 #contact #email-icon {
-  width: 6%;
+  width: 5.5%;
   display: block;
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 25px;
+  -webkit-transition: width 1s, height 1s, -webkit-transform 2s;
+  -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+  transition: width 1s, height 1s, -webkit-transform 1s;
+  transition: width 1s, height 1s, transform 1s;
+  transition: width 1s, height 1s, transform 1s, -webkit-transform 1s;
+}
+
+#contact #email-icon:hover {
+  width: 6.5%;
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(180deg);
 }
 
 #contact h5 {
   color: #53225C;
   text-align: center;
-  font-size: 25px;
-  margin-top: 50px;
-  line-height: 40px;
+  font-size: 20px;
+  margin-top: 60px;
+  line-height: 35px;
 }
 
 .contact-form {
@@ -112,13 +133,46 @@
 .contact-form input {
   border: solid 2px #FF6B8D;
   font-family: 'Poiret One', cursive;
-  color: #FF6B8D;
-  width: 700px;
-  height: 60px;
+  width: 600px;
+  height: 50px;
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
   border-radius: 15px;
+  color: #121212;
+}
+
+.contact-form textarea {
+  border: solid 2px #FF6B8D;
+  font-family: 'Poiret One', cursive;
+  color: #121212;
+  width: 600px;
+  height: 90px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+#socials {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#socials img {
+  width: 3%;
+}
+
+#socials .social {
+  -webkit-transition: width 1s, height 1s, -webkit-transform 2s;
+  -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+  transition: width 1s, height 1s, -webkit-transform 1s;
+  transition: width 1s, height 1s, transform 1s;
+  transition: width 1s, height 1s, transform 1s, -webkit-transform 1s;
+}
+
+#socials .social:hover {
+  width: 3.5%;
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(180deg);
 }
 
 #gallery {
@@ -181,40 +235,38 @@ h1, h2, h3, h4 {
 
 h1 {
   color: white;
-  font-size: 60px;
+  font-size: 40px;
   letter-spacing: 3px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 h2 {
   color: #212121;
-  font-size: 40px;
-  margin-top: 50px;
+  font-size: 27px;
   letter-spacing: 1px;
 }
 
 h3 {
   color: white;
-  font-size: 30px;
+  font-size: 17px;
   letter-spacing: 1px;
-  margin-top: 15px;
 }
 
 h4 {
   color: #FF6B8D;
-  font-size: 30px;
+  font-size: 22px;
 }
 
 p {
   color: #212121;
-  font-size: 27px;
-  line-height: 35px;
+  font-size: 20px;
+  line-height: 18px;
 }
 
 .divider {
   margin: 0 auto;
   display: block;
-  margin-top: 15px;
+  margin-top: 6px;
 }
 
 .divider-yllw {
