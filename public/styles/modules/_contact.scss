@@ -13,6 +13,22 @@ h5 {
     font-size: 25px;
     margin-top: 50px;
     line-height: 40px;
-
 }
+}
+
+.contact-form {
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    input {
+        border: solid 2px #FF6B8D;
+        font-family: 'Poiret One', cursive;
+        color: #FF6B8D;
+        width: 700px;
+        height: 60px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        }
 }

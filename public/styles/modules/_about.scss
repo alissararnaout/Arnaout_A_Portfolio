@@ -1,13 +1,18 @@
 #about {
-    padding-left: 350px;
-    padding-right: 350px;
-    background-color: red;
+    padding-left: 400px;
+    padding-right: 400px;
     height: 760px;
 }
 
 #about-profile {
     float: right;
+    margin-top: 100px;
+    margin-right: 80px;
     #profile {
-        width: 90%; 
+        width: 95%; 
     }
+}
+
+#about-desc {
+    margin-top: 80px;
 }
