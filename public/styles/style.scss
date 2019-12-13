@@ -4,11 +4,16 @@
 @import 'modules/contact';
 @import 'modules/photography';
 @import 'modules/footer';
+@import 'modules/video';
 
 
 
 body {
     font-family: 'Poiret One', cursive;;
+}
+
+.clearfix {
+    overflow: hidden;
 }
 
 h1, h2, h3, h4 {
