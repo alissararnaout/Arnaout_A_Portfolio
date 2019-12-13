@@ -1,7 +1,9 @@
+require('dotenv').config()
+
 const mailto = {
     service: 'gmail',
     user: 'alissararnaout@gmail.com',
-    pass: 'ch66piwa'
+    pass: process.env.password
 }
 
 module.exports = mailto;
