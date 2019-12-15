@@ -51,10 +51,22 @@ function parseUserData(piece) { // person is the database result
             });
     }
 
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+      
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      
     userButtons.forEach(button => button.addEventListener('click', getUserData))
 
     lightbox.querySelector('.close').addEventListener('click', function() {
         lightbox.classList.remove('show-lb');
     });
 
+
+
+    
 })();

@@ -77,9 +77,9 @@
 
     <div class="row">
         <div class="column">
-          <img src="images/{{ Preview }}">
-          <div class="overlay">
-              <a href="https://www.instagram.com/" target="_blank"><div class="text-title">piece1</div>
+          <img src="images/infographic_preview.png">
+          <div class="overlay" onclick="openModal()">
+              <a href="https://www.instagram.com/" target="_blank"><div class="text-title" onclick="openModal()">piece1</div>
               <div class="text-desc">desc</div></a>
             </div>
         </div>
@@ -111,6 +111,15 @@
             </div>
 
       </div>
+
+      <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+   
+    </div>
+    
+</div>
       </div>
 
  
