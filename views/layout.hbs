@@ -2,15 +2,45 @@
 <html>
   <head>
     <title>{{title}}</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='/styles/style.css' />
   </head>
 
     <title>Alissar Arnaout</title>
 
+
 <header>
-      <!-- nav goes here -->  
+  <nav role="navigation" class="sticky">
+  <div id="menuToggle">
+  
+    <input type="checkbox"/>
+    
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+
+    <ul id="menu">
+      <a href="#" class="active"><li>HOME</li></a>
+      <a href="#about"><li>ABOUT</li></a>
+      <a href="#work"><li>WORK</li></a>
+      <a href="#photgraphy"><li>PHOTOGRAPHY</li></a>
+      <a href="/includes/AlissarA_Resume.pdf" target="_blank"><li>RESUME</li></a>
+      <a href="#contact"><li>CONTACT</li></a>
+    
+    <div id="socials">
+      <a href="http://instagram.com/byalissar" target="_blank"><img src="/images/icon_instagram.svg" alt="Instagram: @byalissar" class="social"></a>
+      <a href="https://www.linkedin.com/in/alissararnaout" target="_blank"><img src="/images/icon_linkedin.svg" alt="LinkedIn: alissararnaout" class="social"></a>
+      <a href="https://vsco.co/byalissar" target="_blank"><img src="/images/icon_vsco.svg" alt="Instagram: @byalissar" class="social"></a>
+    </div>
+    
+    </ul>
+  </div>
+</nav>
 </header>
+
 
 
   <body>
@@ -22,6 +52,10 @@
   </footer>
 
 
+
+
 <script type="module" src="js/main.js"></script>
+<script type="module" src="js/contact.js"></script>
+<script type="module" src="js/nav.js"></script>
 
 </html>

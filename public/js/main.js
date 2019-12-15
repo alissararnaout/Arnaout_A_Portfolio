@@ -1,52 +1,60 @@
-(() => {
-    console.log('fired');
+// this is a partially revealing module pattern - just a variation on what we've already done
 
-    const form = document.querySelector('form'), submit = form.querySelector('.submit-button');
+const myVM = (() => {
+    // get the user buttons and fire off an async DB query with Fetch
+    let userButtons = document.querySelectorAll('.u-link'),  // grab buttons with class of u-link
+        lightbox = document.querySelector('.lightbox');
 
-    function handleMail(event) {
-        event.preventDefault();
+function renderSocialMedia(socialMedia) {
+    return `<ul class="u-social">
+        ${socialMedia.map(item => `<li>${item}</li>`).join('')}
+    </ul>` // running internal loop for every social media text
+}
 
-        // formdata will be the values of the fields the user fills out (the inputs)
-        // maildata is an object we'll build and send through with those values
+function parseUserData(piece) { // person is the database result
+        // UX/UI would be added in here, e.g. loading animations, etc.
+    let targetDiv = document.querySelector('.lb-content'),
+        targetImg = lightbox.querySelector('img');
 
-        let formdata = new FormData(form),
-            maildata = {};
+    let bioContent = `
+        <p>${piece.Description}</p>
+        <h4>Social Media:/</h4>
+        ${renderSocialMedia(piece.social)}
+    `;
+    console.log(bioContent);
 
-        // parse the form data (it's an iterable, so you have to do it this way)
-        // and populate the maildata object with the input values (the formdata entries)
-        for (let [key, value] of formdata.entries()) {
-            maildata[key] = value;
-        }
+    targetDiv.innerHTML = bioContent;
+    targetImg.src = piece.imgsrc;
 
-        let url = `/mail`;
+    lightbox.classList.add('show-lb');
+}
 
-        // use the POST superglobal which is more secure than GET, and hit the /mail route in index.js
-        // inside the routes folder. this will take in the formdata we're sending, and use that to send our email
-        fetch(url, {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json, text/plain, */*',
-                'Content-type': 'application/json'
-            },
+    function getUserData(event) {  // get user data/property to make our query
+       
+        event.preventDefault(); // kill the default a tag behaviour (don't navigate anywhere)
+        //debugger;
+    
+        let imgSrc = this.previousElementSibling.getAttribute('src'); // find the image closest to the anchor tag and get its src property
 
-            body: JSON.stringify(maildata)
-        })
-            .then(res => res.json())
+        let url = `/users/${this.getAttribute('href')}`;
+
+        fetch(url) // go get the data  //this statemenet will change the route, the express file will react
+            .then(res => res.json()) // parse the json result into a plain object
             .then(data => {
-                // remove this when testing is done and everything is working
-                console.log(data);
+                console.log("my database result is:", data)
 
-                if (data.response.includes("OK")) {
-                    console.log("working")
-                     // we successfully sent an email via gmail and nodemailer!
-                    // flash success here, reset the form
-                    form.reset();
-                }
-            }) // this will be a success or fail message from the server
-            .catch((err) => console.log(err));
-
-        console.log('tried sending mail');
+                data[0].imgsrc = imgSrc;
+                parseUserData(data[0]);
+            })
+            .catch((err) => {
+                console.log(err)
+            });
     }
 
-    form.addEventListener('submit', handleMail)
-})()
+    userButtons.forEach(button => button.addEventListener('click', getUserData))
+
+    lightbox.querySelector('.close').addEventListener('click', function() {
+        lightbox.classList.remove('show-lb');
+    });
+
+})();

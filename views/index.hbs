@@ -5,7 +5,7 @@
   <h1>ALISSAR ARNAOUT</h1>
   <h3>designer / dreamer / nice person</h3>
   <div class="arrow bounce"><!-- add anchor-->
-      <a href="#"><img src="/images/arrow.png" alt="" id="arrow"></a>
+      <a href="#about"><img src="/images/arrow.png" alt="" id="arrow"></a>
     </div>
   </div>
 </div>
@@ -37,16 +37,54 @@
 <h2>WORK</h2>
     <img src="/images/divider.png" alt="divider" class="divider">
 
-     <!-- database stuff here -->
-<div id="portfolio">
+
+<!-- database stuff -->
+
+  <!-- <div class="team"> -->
+        <!-- loop through all our team members and put their info on the page -->
+        <!-- this is exactly like a forEach loop with plain JS -->
+        
+       <!-- {{#each piece}}
+        <div class="user-panel">
+            <img class="u-avatar" src="/images/{{ Preview }}" alt="avatar">
+
+            <a class="u-link" href="{{ ID }}">
+                See More Info
+            </a>
+
+            <h1>{{ Project }}</h1>
+            <h3>{{ Tools}}</h3>
+        </div>
+        {{/each}}
+        
+    </div>
+    </div> -->
+
+    <!-- this will be filled in on the client side when we render our AJAX data -->
+    <!-- <section class="lightbox">
+        <span class="close">x</span>
+        <div class="sidebar">
+            <img src="" alt="larger bio image">
+        </div>
+
+        <div class="lb-content">
+
+        </div> -->
+
+
+
+<div id="portfolio">  <!-- END HERE-->
+
     <div class="row">
         <div class="column">
-          <img src="/images/12.png">
+          <img src="images/{{ Preview }}">
           <div class="overlay">
               <a href="https://www.instagram.com/" target="_blank"><div class="text-title">piece1</div>
               <div class="text-desc">desc</div></a>
             </div>
         </div>
+
+
 
         <div class="column">
             <img src="/images/1.png">
