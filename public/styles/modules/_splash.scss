@@ -2,16 +2,13 @@
     margin: 0 auto;
     max-width: 100%;
     background-color: red;
+    background-image: url(/images/img_splash.png);
+    display: block;
+    padding-top: 200px;
+    height: 650px;
 }
-    #splash {
-        margin: 0 auto;
-        width: 100%;
-    }
-    #content {
   
-        position: absolute;
-    }
-
+  
     #logo {
         width: 12%;
         margin: 0 auto;
