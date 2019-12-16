@@ -44,13 +44,14 @@ router.post('/mail', (req, res) => {
 })
 
 
+
 // database stuff
 
 router.get('/', (req, res) => { // req = making request, res = getting response
   // should really get the user data here and then fetch it thru, but let's try this asynchronously
   console.log('at the main route');
 
- let query = "SELECT ID, Project, Preview, Description, Process, Tools, Content FROM portfolio_pieces";
+ let query = "SELECT ID, Project, ProjKey, Preview FROM tbl_preview";
 
   sql.query(query, (err, result) => {
       if (err) { throw err; console.log(err); }
@@ -66,7 +67,7 @@ router.get('/users/:id', (req, res) => { // colon is a dynamic placeholder, what
   console.log('hit a dynamic route');
   console.log(req.params.id);
  
- let query = `SELECT * FROM portfolio_pieces WHERE ID="${req.params.id}"`;
+ let query = `SELECT * FROM tbl_piece WHERE ProjectID="${req.params.id}"`;
 
   sql.query(query, (err, result) => {
       if (err) { throw err; console.log(err); }
@@ -87,7 +88,6 @@ router.get('/users/:id', (req, res) => { // colon is a dynamic placeholder, what
       // send the DB query back to the browser
       res.json(result);
   })
-})
-
+}) 
 
 module.exports = router;
