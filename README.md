@@ -1,6 +1,5 @@
 # Portfolio
-Professional Portfolio
-Link: http://www.byalissar.com/
+http://www.byalissar.com/
 
 ## Built With
 * [Bootstrap](https://getbootstrap.com) - Bootstrap Framework
