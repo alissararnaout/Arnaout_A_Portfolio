@@ -95,7 +95,6 @@
 }
 
 
-
 #menu
 {
 position: absolute;
@@ -106,7 +105,7 @@ position: absolute;
   padding-top: 200px;
   text-align: center;
   
-  background: rgba($color: white, $alpha: 0.8);
+  background: white;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -120,7 +119,7 @@ position: absolute;
 #menu li
 {
   padding: 10px 0;
-  font-size: 22px;
+  font-size: 25px;
   margin-bottom: 20px;
 
 }

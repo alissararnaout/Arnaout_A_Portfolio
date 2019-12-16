@@ -1,13 +1,16 @@
+
 <div id="container">
     <img src="/images/img_splash.png" alt="" id="splash">
+  
   <div id="content">
   <img src="/images/logo_white.svg" alt="" id="logo">
   <h1>ALISSAR ARNAOUT</h1>
   <h3>designer / dreamer / nice person</h3>
-  <div class="arrow bounce"><!-- add anchor-->
+  <div class="arrow bounce">
       <a href="#about"><img src="/images/arrow.png" alt="" id="arrow"></a>
     </div>
   </div>
+  
 </div>
 
 
@@ -16,7 +19,7 @@
     <h2>WHO AM I?</h2>
     <img src="/images/divider.png" alt="divider" class="divider">
 
-    <div id="about-profile">
+    <div id="about-profile" class="glitch">
         <img src="/images/img_profile.png" alt="" id="profile">
       </div>
 
@@ -75,51 +78,69 @@
 
 <div id="portfolio">  <!-- END HERE-->
 
-    <div class="row">
-        <div class="column">
-          <img src="images/infographic_preview.png">
-          <div class="overlay" onclick="openModal()">
-              <a href="https://www.instagram.com/" target="_blank"><div class="text-title" onclick="openModal()">piece1</div>
-              <div class="text-desc">desc</div></a>
-            </div>
-        </div>
+    <div class="r">
+  <div class="c">
+    <img src="/images/infographic_preview.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="c">
+    <img src="/images/1.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="c">
+    <img src="/images/2.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="c">
+    <img src="/images/3.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
 
-
-
-        <div class="column">
-            <img src="/images/1.png">
-            <div class="overlay">
-                <a href="https://www.instagram.com/" target="_blank"><div class="text-title">piece2</div>
-                <div class="text-desc">desc</div></a>
-              </div>
-          </div>
-
-          <div class="column">
-              <img src="/images/8.png">
-              <div class="overlay">
-                  <a href="https://www.instagram.com/" target="_blank"><div class="text-title">piece3</div>
-                  <div class="text-desc">desc</div></a>
-                </div>
-            </div>
-            <div class="column">
-                <img src="/images/8.png">
-                <div class="overlay">
-                    <a href="https://www.instagram.com/" target="_blank"><div class="text-title">piece4</div>
-                    <div class="text-desc">desc</div></a>
-                  </div>
-              </div>
-            </div>
-
-      </div>
-
-      <div id="myModal" class="modal">
+<div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
   <div class="modal-content">
 
-   
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="/images/infographic_preview.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="/images/1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="/images/2.png" style="width:100%">
     </div>
     
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="/images/3.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="c">
+      <img class="demo cursor" src="img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="c">
+      <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="c">
+      <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="c">
+      <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+  </div>
 </div>
+
+  
       </div>
 
  
@@ -284,7 +305,9 @@
   <input type="text" name="name" required placeholder="Your Name*" class="input-length">
   <input type="email" name="usermail" required placeholder="Your Email*" class="input-length">
   <textarea name="message" id="user-message" required placeholder="Your Inquiry*" cols="30" rows="6"></textarea>
+
   <input type="submit" value="Let's Talk" class="submit-button">
+
 </form>
 </section>
 

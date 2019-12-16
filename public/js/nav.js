@@ -13,5 +13,3 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
-getelem
